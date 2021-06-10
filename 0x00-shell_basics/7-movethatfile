@@ -1,2 +1,2 @@
 #!/bin/bash
-mv betty /tmp/holberton
+mv /root/holberton-system_engineering-devops/0x00-shell_basics/tmp/betty /root/holberton-system_engineering-devops/0x00-shell_basics/tmp/holberton
