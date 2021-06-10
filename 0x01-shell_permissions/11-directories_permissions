@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod -R ugo+x /root/holberton-system_engineering-devops/0x01-shell_permissions
+chmod -R 755 /root/holberton-system_engineering-devops/0x01-shell_permissions
