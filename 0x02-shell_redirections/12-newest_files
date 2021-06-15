@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f | ls -rt | tail -n 10
+ls -time=creation | head -n 10
