@@ -4,38 +4,38 @@ Project developed by Juan Esteban Correa Pérez as part of the foundations progr
 
 It's purpose is to help the student understand:
 
-What happens when you type $ ls -l *.txt  
+What happens when you type $ ls -l *.txt<br />
 
 # Shell Initialization Files
 
-What are the /etc/profile file and the /etc/profile.d directory  
-What is the ~/.bashrc file  
+What are the /etc/profile file and the /etc/profile.d directory<br />
+What is the ~/.bashrc file<br />
 
 # Variables
 
-What is the difference between a local and a global variable  
-What is a reserved variable  
-How to create, update and delete shell variables  
-What are the roles of the following reserved variables: HOME, PATH, PS1  
-What are special parameters  
-What is the special parameter $??  
+What is the difference between a local and a global variable<br />
+What is a reserved variable<br />
+How to create, update and delete shell variables<br />
+What are the roles of the following reserved variables: HOME, PATH, PS1<br />
+What are special parameters<br />
+What is the special parameter $??<br />
 
 # Expansions
 
-What is expansion and how to use them  
-What is the difference between single and double quotes and how to use them properly  
-How to do command substitution with $() and backticks  
+What is expansion and how to use them<br />
+What is the difference between single and double quotes and how to use them properly<br />
+How to do command substitution with $() and backticks<br />
 
 # Shell Arithmetic
 
-How to perform arithmetic operations with the shell  
+How to perform arithmetic operations with the shell<br />
 
 # The alias Command
 
-How to create an alias  
-How to list aliases  
-How to temporarily disable an alias  
+How to create an alias<br />
+How to list aliases<br />
+How to temporarily disable an alias<br />
 
 # Other help pages
 
-How to execute commands from a file in the current shell  
+How to execute commands from a file in the current shell<br />
