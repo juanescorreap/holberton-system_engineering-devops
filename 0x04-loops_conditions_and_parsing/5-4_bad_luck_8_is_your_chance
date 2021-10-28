@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#Bash script that displays Best School 10 times
+x=0
+while [ $x -le 9 ]; do
+	if [ $x == 3 ]; then
+		echo "bad luck"
+	elif [ $x == 7 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	x=$((x + 1))
+done
