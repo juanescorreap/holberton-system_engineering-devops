@@ -1,5 +1,5 @@
 # Manifest that Installs puppet-lint package
 package { 'puppet-lint':
-  ensure   => '1.1.0',
+  ensure   => '2.5.0',
   provider => 'gem',
 }
