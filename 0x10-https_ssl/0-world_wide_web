@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# Bash script that will display information about subdomains.
+
+if [ "$#" = 1 ]; then
+	subdomains=("www" "lb-01" "web-01" "web-02")
+	for subdomains in "www" "lb-01" "web-01" "web-02 "
+	do
+		record_type=$(dig "$subdomains"."$1" | grep -A 1 "ANSWER SECTION" | tail -1 | awk '{print $4}')
+		destination=$(dig "$subdomains"."$1" | grep -A 1 "ANSWER SECTION" | tail -1 | awk '{print $5}')
+		echo "The subdomain $subdomains is a $record_type record and points to $destination"
+	done
+elif [ "$#" = 2 ]; then
+	record_type=$(dig "$2"."$1" | grep -A 2 "ANSWER SECTION" | tail -1 | awk '{print $4}')
+	destination=$(dig "$2"."$1" | grep -A 2 "ANSWER SECTION" | tail -1 | awk '{print $5}')
+	echo "The subdomain $2 is a $record_type record and points to $destination"
+fi
