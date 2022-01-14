@@ -2,7 +2,6 @@
 # Bash script that will display information about subdomains.
 
 if [ "$#" = 1 ]; then
-	#subdomains=("www" "lb-01" "web-01" "web-02")
 	for subdomains in "www" "lb-01" "web-01" "web-02"
 	do
 		record_type=$(dig "$subdomains"."$1" | grep -A1 "ANSWER SECTION" | tail -1 | awk '{print $4}')
