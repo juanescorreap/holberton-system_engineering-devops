@@ -3,7 +3,7 @@
 #except the following TCP ports:, 22 (SSH), 443 (HTTPS SSL) and 80 (HTTP).
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-ufw allow 22/tcp
-ufw allow 433/tcp
-ufw allow 80/tcp
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw allow 443
 sudo ufw enable
