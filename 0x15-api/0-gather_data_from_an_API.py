@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-import requests
-import sys
-
 """Python script that, using a REST API,
 for a given employee ID, returns information
 about his/her Todo list progress"""
+import requests
+import sys
+
 
 if __name__ == "__main__":
 
