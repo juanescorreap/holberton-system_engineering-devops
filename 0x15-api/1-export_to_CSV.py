@@ -28,8 +28,6 @@ if __name__ == "__main__":
     f = open('{}.csv'.format(sys.argv[1]), 'w')
     try:
         writer = csv.writer(f, quoting=csv.QUOTE_ALL)
-        writer.writerow(
-            ("USER_ID", "USERNAME", "TASK_COMPLETED_STATUS", "TASK_TITLE"))
         for k in tasks_list:
             writer.writerow((k.get('userId'), username,
                             k.get('completed'), k.get('title')))
