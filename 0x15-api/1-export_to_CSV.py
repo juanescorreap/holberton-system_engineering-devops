@@ -24,11 +24,6 @@ if __name__ == "__main__":
                 completed = completed + 1
                 todos_list.append(i)
 
-    print("Employee {} is done with tasks({}/{}):".format(user.get('name'),
-          completed, user_todos))
-    for j in todos_list:
-        print("\t{}".format(j.get('title')))
-
     username = user.get('username')
     f = open('{}.csv'.format(sys.argv[1]), 'w')
     try:
