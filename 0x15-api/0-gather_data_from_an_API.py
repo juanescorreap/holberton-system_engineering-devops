@@ -3,7 +3,7 @@ import requests
 import sys
 """Python script that, using a REST API,
 for a given employee ID, returns information
-about his/her TODO list progress"""
+about his/her Todo list progress"""
 
 if __name__ == "__main__":
 
