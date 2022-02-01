@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """
-Script to export data in the CSV format
+Script to export data in the  JSON format
 """
 import json
 import requests
-import sys
 if __name__ == "__main__":
 
     user = requests.get('https://jsonplaceholder.typicode.com/users').json()
