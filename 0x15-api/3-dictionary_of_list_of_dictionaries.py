@@ -2,9 +2,9 @@
 """
 Script to export data in the  JSON format
 """
-import json
-import requests
 if __name__ == "__main__":
+    import json
+    import requests
 
     user = requests.get('https://jsonplaceholder.typicode.com/users').json()
     todos = requests.get('https://jsonplaceholder.typicode.com/todos').json()
