@@ -12,11 +12,11 @@ if __name__ == "__main__":
     user = requests.get('https://jsonplaceholder.typicode.com/users').json()
     todos = requests.get('https://jsonplaceholder.typicode.com/todos').json()
 
-    todos_list = []
     user_dict = {}
     tasks_dict = {}
 
     for j in user:
+        todos_list = []
         for i in todos:
             if i.get('userId') == j.get('id'):
                 tasks_dict = {"username": j.get('username'),
