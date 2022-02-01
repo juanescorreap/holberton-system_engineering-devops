@@ -8,7 +8,7 @@ import sys
 if __name__ == "__main__":
 
     user = requests.get('https://jsonplaceholder.typicode.com/users/{}'
-                        .format(sys.argv[1]))
+                        .format(sys.argv[1])).json()
     todos = requests.get('https://jsonplaceholder.typicode.com/todos').json()
 
     todos_list = []
@@ -16,10 +16,10 @@ if __name__ == "__main__":
     tasks_dict = {}
 
     for i in todos:
-        if i.get('userId') == user.json().get('id'):
+        if i.get('userId') == user.get('id'):
             tasks_dict = {"task": i.get('title'),
                           "completed": i.get('completed'),
-                          "username": user.json().get('username')}
+                          "username": user.get('username')}
             todos_list.append(tasks_dict)
     user_dict = {sys.argv[1]: todos_list}
 
