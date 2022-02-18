@@ -7,7 +7,6 @@ of the first 10 hot posts listed for a given subreddit.
 
 def top_ten(subreddit):
     import requests
-    import json
     request = requests.get('https://www.reddit.com/r/{}/hot.json?limit=10'.
                            format(subreddit), allow_redirects=False)
     if request.status_code == 404:
