@@ -5,10 +5,8 @@ the number of subscribers for a given subreddit
 """
 
 
-import requests
-
-
 def number_of_subscribers(subreddit):
+    import requests
     request = requests.get('https://www.reddit.com/r/{}/about.json'.
                            format(subreddit), allow_redirects=False)
     if request.status_code == 200:
